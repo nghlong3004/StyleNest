@@ -15,12 +15,8 @@
 - **Database**: PostgreSQL
 - **Triển khai**: Vercel (FE)
 
-## Cấu trúc thư mục
-
-<pre><code> ```bash StyleNest/ ├── frontend/ # React App ├── backend/ # Java App (Spring Boot) ├── README.md ├── .gitignore ``` </code></pre>
-
 ## member
-- [Long  (Backend)](https://github.com/nghlong3004)
-- Tài   (Backend)(https://github.com/ntai18)
-- Trung (Frontend)(https://github.com/nguyenvan-trung)
-- Minh  (Frontend)(https://github.com/minhnhim123)
+- [Long (Backend)](https://github.com/nghlong3004)
+- [Tài (Backend)](https://github.com/ntai18)
+- [Trung (Frontend)](https://github.com/nguyenvan-trung)
+- [Minh (Frontend)](https://github.com/minhnhim123)
