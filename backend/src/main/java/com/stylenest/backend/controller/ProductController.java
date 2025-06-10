@@ -23,22 +23,22 @@ public class ProductController {
     this.service = service;
   }
 
-  @GetMapping
+  @GetMapping("/getall")
   public List<Product> getAll() {
     return service.findAll();
   }
 
-  @GetMapping("/{id}")
+  @GetMapping("/get/{id}")
   public ResponseEntity<Product> getById(@PathVariable Long id) {
     return service.findById(id).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
   }
 
-  @PostMapping
+  @PostMapping("/create")
   public Product create(@RequestBody Product product) {
     return service.save(product);
   }
 
-  @PutMapping("/{id}")
+  @PutMapping("/update/{id}")
   public ResponseEntity<Product> update(@PathVariable Long id, @RequestBody Product updated) {
     return service.findById(id).map(p -> {
       p.setName(updated.getName());
@@ -53,7 +53,7 @@ public class ProductController {
   }
 
 
-  @DeleteMapping("/{id}")
+  @DeleteMapping("/delete/{id}")
   public ResponseEntity<Void> delete(@PathVariable Long id) {
     service.delete(id);
     return ResponseEntity.noContent().build();
