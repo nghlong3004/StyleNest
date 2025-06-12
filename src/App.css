@@ -1,0 +1,197 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  background-image: url("https://media.istockphoto.com/id/1635568638/vi/vec-to/n%E1%BB%81n-k%E1%BA%BFt-c%E1%BA%A5u-gi%E1%BA%A5y-m%C3%A0u-cam-v%C3%A0-v%C3%A0ng-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng.jpg?s=612x612&w=0&k=20&c=2Eu_LuLwixK3xazX2xtK2lubtJDGHBen3xaHlixalB4=");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+#container {
+  display: block;
+  width: 80vw;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2vw;
+  overflow: hidden;
+}
+
+ul {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f19e21;
+}
+#navigation {
+  display: flex;
+  justify-content: space-between;
+}
+#navigation li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid #e1e1e1;
+}
+
+#navigation li:last-child {
+  border-right: none;
+}
+
+#navigation li a {
+  display: block;
+  padding: 14px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#navigation li a:hover:not(.active) {
+  background-color: #f3b462;
+}
+
+.active {
+  background-color: #e38b0f;
+}
+
+#main_img {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  padding: 10px;
+}
+
+#main_img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+
+#header {
+  height: 8vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#header img {
+  height: 100%;
+  width: auto;
+}
+
+.sign {
+  color: #2e00e7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign:active {
+  color: #1900ff;
+}
+
+h2 {
+  color: #202ef4;
+  font: bold 32px "Roboto", sans-serif;
+  margin: 6% 0 3%;
+  text-align: center;
+}
+
+.fashion {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fashion > a.product {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.fashion img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.fashion img:hover {
+  transform: scale(1.05);
+}
+
+#name {
+  font: bold 14px "Arial", sans-serif;
+  color: #333;
+  margin-top: 10px;
+}
+
+#price {
+  font: bold 14px "Arial", sans-serif;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+hr {
+  width: 90%;
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px auto;
+}
+
+.product {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10vw;
+  width: 100%;
+  background-color: #eee;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.column {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin-bottom: 20px;
+  color: #333;
+}

@@ -1,0 +1,492 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 80px; /* Giảm chiều cao để gọn hơn */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Thêm nền mờ để nổi bật */
+}
+
+#header img {
+  height: 80%;
+  width: auto;
+}
+
+#can {
+  display: flex;
+  gap: 15px;
+}
+
+#can button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #f19e21;
+  transition: background-color 0.3s;
+}
+
+#can button:hover {
+  background-color: #e6a62f;
+}
+
+#can button a {
+  text-decoration: none;
+  color: #ffffff;
+  font: 14px "Roboto", sans-serif;
+}
+
+#layout {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/id/1635568638/vi/vec-to/n%E1%BB%81n-k%E1%BA%BFt-c%E1%BA%A5u-gi%E1%BA%A5y-m%C3%A0u-cam-v%C3%A0-v%C3%A0ng-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng.jpg?s=612x612&w=0&k=20&c=2Eu_LuLwixK3xazX2xtK2lubtJDGHBen3xaHlixalB4=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  width: 80vw; /* Tăng chiều rộng để hiển thị tốt hơn */
+  max-width: 1400px; /* Tăng max-width cho màn hình lớn */
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin: 30px auto;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+ul#navigation {
+  position: sticky;
+  top: 0;
+  background-color: #f19e21;
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+#navigation li {
+  flex: 1;
+  border-right: 1px solid #dcd9d9;
+  text-align: center;
+  z-index: 100;
+}
+
+#navigation li:last-child {
+  border-right: none;
+}
+
+#navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  text-decoration: none;
+  font: 16px "Roboto", sans-serif;
+  transition: background-color 0.3s;
+}
+
+#navigation li a:hover:not(.active) {
+  background-color: #f3b462;
+}
+#big_img img {
+  width: 100%;
+}
+.active {
+  background-color: #e6a62f;
+}
+
+.fashion {
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fashion_nam {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.fashion .product {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  background: white;
+}
+
+.fashion .product:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fashion .product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.fashion .product p {
+  margin: 8px 0;
+  padding: 0 10px;
+}
+
+.fashion .product #name {
+  font-weight: 600;
+}
+
+.fashion .product #price {
+  color: #e91e63;
+}
+
+.signIn,
+.signUp {
+  color: #2e00e7;
+}
+
+.signIn:active,
+.signUp:active {
+  color: #1900ff;
+}
+
+h2 {
+  color: #ffb700;
+  font: bold 32px "Roboto", sans-serif;
+  margin: 40px 0;
+  text-decoration: underline;
+}
+
+.fashion > a > div > img {
+  border: 0.5px solid #00000014;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#name {
+  font: bold 14px "Arial", sans-serif;
+  color: #000000;
+  margin-top: 10px;
+  min-height: 40px; /* Đảm bảo không bị xáo trộn bố cục */
+}
+
+#price {
+  font: bold 14px "Arial", sans-serif;
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+hr {
+  width: 100%;
+  border: 0.5px solid #dcd9d9;
+  margin: 30px auto;
+}
+
+.product {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  font: bold 16px "Arial", sans-serif;
+  margin-bottom: 10px;
+}
+#footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  width: 100%;
+  background-color: #2c2c2c;
+  color: #4b4949;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #423f3f;
+  border-left: 4px solid #ff4081;
+  padding-left: 10px;
+}
+h2 {
+  text-decoration: none;
+  color: #2d98d5 !important;
+}
+.column {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+.column li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #928c8c;
+  transition: color 0.3s;
+}
+
+.column li:hover {
+  color: #ff4081;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#dang_ky #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 400px; /* Giới hạn chiều rộng modal */
+  background-color: #487bb2;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#dang_ky #container h1 {
+  font: bold 28px "Arial", sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#dang_ky #container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+#dang_ky #container input {
+  background-color: #efeeee;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font: 16px "Arial", sans-serif;
+  color: #070707;
+  border: none;
+}
+
+#dang_ky #container button {
+  width: 100%;
+  font: 14px "Roboto", sans-serif;
+  background-color: #1877f2;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#dang_ky #container button:hover {
+  background-color: #145db2;
+}
+
+#dang_nhap #container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  background-color: #487bb2;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#dang_nhap #container h1 {
+  font: bold 28px "Arial", sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#dang_nhap #container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+#dang_nhap #container input {
+  background-color: #f5f3f3;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font: 16px "Arial", sans-serif;
+  color: #060606;
+  border: none;
+}
+
+#dang_nhap #container #lost_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#dang_nhap #container #lost {
+  font: 12px "Arial", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#dang_nhap #container #diffs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#dang_nhap #container p {
+  color: #ffffff;
+  font: 14px "Arial", sans-serif;
+}
+
+#dang_nhap #container .diff {
+  font: bold 14px "Arial", sans-serif;
+  background-color: #b3b3b342;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#dang_nhap #container .diff:hover {
+  background-color: #b3b3b380;
+}
+
+#dang_nhap #container #sign_in {
+  font: 14px "Roboto", sans-serif;
+  background-color: #1877f2;
+  color: #ffffff;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#dang_nhap #container #sign_in:hover {
+  background-color: #145db2;
+}
+
+#dang_nhap #container hr {
+  width: 100%;
+  margin: 20px 0;
+  border-color: #ffffff;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#dang_nhap #container,
+#dang_ky #container {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  #can {
+    gap: 10px;
+  }
+
+  #can button {
+    padding: 6px 12px;
+  }
+
+  #container {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  .fashion {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .fashion > a.product {
+    width: 100%;
+  }
+
+  #footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #dang_ky #container,
+  #dang_nhap #container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  #name {
+    font-size: 12px;
+    min-height: 30px;
+  }
+
+  #price {
+    font-size: 12px;
+  }
+}
