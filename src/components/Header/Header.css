@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#header img {
+  height: 80%;
+  width: auto;
+}
+
+#can {
+  display: flex;
+  gap: 15px;
+}
+
+#can button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #f19e21;
+  transition: background-color 0.3s;
+}
+
+#can button:hover {
+  background-color: #e6a62f;
+}
+
+#can button a {
+  text-decoration: none;
+  color: #ffffff;
+  font: 14px "Roboto", sans-serif;
+}
+
+.signIn,
+.signUp {
+  color: #2e00e7;
+}
+
+.signIn:active,
+.signUp:active {
+  color: #1900ff;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  #can {
+    gap: 10px;
+  }
+
+  #can button {
+    padding: 6px 12px;
+  }
+}
